@@ -18,6 +18,8 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     update_on = models.DateTimeField(auto_now=True)
+
+
     class Meta:
         ordering =  ["-created_on"]
 
