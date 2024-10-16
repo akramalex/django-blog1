@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-akramalex-djangoblog1-ae9ckjpqn7r.ws-eu116.gitpod.io','.herokuapp.com']
 
@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'blog',
     'about',
+    'contact',
 ]
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
