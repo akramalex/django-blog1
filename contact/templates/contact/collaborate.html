@@ -3,12 +3,17 @@
 
 {% block content %}
 <div class="container">
-    <h1>Contact Us</h1>
+    <h2>Thank You for Your Request!</h2>
+    <p>I believe in the power of shared knowledge and collective effort.
+        Whether you have a project in mind, wish to co-author
+        an article, or simply want to brainstorm some ideas,
+        I'm excited to hear from you. Fill out the form
+        and we can get the ball rolling!</p>
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <form method="post">
                 {% csrf_token %}
-                {{ form | crispy }}  <!-- Render the form using crispy -->
+                {{ form | crispy }} <!-- Render the form using crispy -->
                 <button class="btn btn-secondary" type="submit">Submit</button>
             </form>
         </div>
