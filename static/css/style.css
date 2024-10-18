@@ -127,7 +127,9 @@ body {
     color: #23BBBB;
     text-decoration: none;
 }
-
+.profile-image {
+    width: 75%;
+}
 .link:hover,
 .link:active {
     color: #445261;
